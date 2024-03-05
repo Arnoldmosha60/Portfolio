@@ -25,7 +25,7 @@ const Contact = () => {
   useEffect(() => {
     setFormData(initialFormData);
     setErrData(initialErrData);
-  }, [initialErrData, initialFormData])
+  }, [])
 
   return (
     <div name='Contact' className='pt-10 h-full min-h-screen w-full flex items-center bg-gradient-to-b to-gray-800 from-black'>

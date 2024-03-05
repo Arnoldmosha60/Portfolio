@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Navigation from './Navigation';
 import MyMenu from './MyMenu';
 
@@ -8,6 +8,23 @@ const Navbar = () => {
     const handleClick = () => {
         setNavOpen(prevValue => !prevValue)
     }
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth >= 768) {
+          setNavOpen(false);
+        }
+      };
+  
+      // Attach the event listener for resizing
+      window.addEventListener('resize', handleResize);
+  
+      // Clean up the event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
   return (
     <>
       <div className='fixed w-full max-w-[100vw] h-20 bg-gradient-to-b from-black via-black to-transparent z-50 bg-opacity-[0.9]'>
@@ -19,8 +36,11 @@ const Navbar = () => {
               </p>
             </div>
 
-            <Navigation ulClass='hidden md:flex' liClass='' />
-            <MyMenu handleClick={handleClick} navOpen={navOpen} />
+            {window.innerWidth < 768 ? (
+              <MyMenu handleClick={handleClick} navOpen={navOpen} />
+            ) : (
+              <Navigation ulClass='hidden md:flex' liClass='' />
+            )}
 
             <Navigation handleClick={handleClick} ulClass={`${navOpen ? "-translate-x-0" : "translate-x-full"} duration-500 flex flex-col h-screen bg-gradient-to-b from-black to-gray-800 w-screen xs:w-80 top-0 right-0 absolute items-center justify-center md:scale-0`} liClass="my-4 py-2 text-lg" />
           </div>
