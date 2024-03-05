@@ -4,6 +4,7 @@ import { Download } from './Icons'
 import profile from '../assets/alvin.png'
 import Section from './Section'
 import TechStack from '../data/techStack'
+import resume from '../assets/CV.pdf'
 
 const About = () => {
   return (
@@ -44,7 +45,7 @@ const About = () => {
         </div>
 
         <div className='py-5'>
-          <a href='resume' target="_blank" rel="noreferrer" download={true} className='z-30  group bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center gap-3 px-6 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-36 relative'>
+          <a href={resume} target="_blank" rel="noreferrer" download={true} className='z-30  group bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center gap-3 px-6 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-36 relative'>
             <span className='pr-6 sm:pr-0 sm:group-hover:-translate-x-5 sm:transition-transform delay-[400ms] ease-out'>Resume</span>
             <span className="absolute right-5 sm:scale-0 transition-all group-hover:scale-100 ease-in delay-200 animate-pulse duration-500 ">
                 <Download />

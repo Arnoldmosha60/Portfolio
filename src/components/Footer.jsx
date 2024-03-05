@@ -13,7 +13,7 @@ const Footer = () => {
         <div className='flex flex-wrap justify-between'>
           <div className='w-full sm:w-3/5 lg:w-2/5 pr-2'>
             <h3 className='text-white text-[1.75rem] font-bold pb-2'>Arnold Mosha</h3>
-            <p className='text-lg text-cyan-400 pb-5'>FullStack Developer</p>
+            <p className='text-lg text-cyan-400 pb-5'>Software Developer</p>
             <p>Thank you for visiting my Personal Portfolio.</p>
             <p>Lets connect over socials.</p>
             <p>Open to any Feedback</p>
