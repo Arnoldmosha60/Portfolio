@@ -5,7 +5,7 @@ import Card from './Card'
 import { Code, Link } from './Icons'
 import CardCover from './CardCover'
 
-const Project = ({ project: { img, demo, code, description, style = { shadow: "shadow-gray-500", cover: "from-gray-500" } } }) => {
+const Project = ({ project: { img, demo, code, description, style = { shadow: 'shadow-gray-500', cover: "from-gray-500" } } }) => {
   return (
     <Card style={style}>
         <div className="group relative rounded-md cursor-pointer">

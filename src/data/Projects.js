@@ -1,5 +1,9 @@
 import portfolio from '../assets/Projects/portfolio.PNG'
 import todo from '../assets/Projects/TODO_APP.png'
+import saccos from '../assets/Projects/saccos.PNG'
+import helpdesk from '../assets/Projects/helpdesk.jpeg'
+import ccm from '../assets/Projects/ccm.PNG'
+
 const projects = [
     // {
     //     img: 'ECOMMERCE_DASHBOARD',
@@ -49,30 +53,18 @@ const projects = [
             display: " hidden group-hover:flex"
         }
     },
-    // {
-    //     img: 'Dev_Notes',
-    //     name: "DevNotes",
-    //     demo: "https://dev-notes-793.vercel.app/",
-    //     code: "https://github.com/dhawal-793/Dev_Notes",
-    //     description: "DevNotes is a Simple Notes App Created using MERN Stack with complete user Authentication.",
-    //     style: {
-    //         shadow: "shadow-[#F8FAFC]",
-    //         cover: "from-[#F8FAFC]",
-    //         display: " hidden group-hover:flex"
-    //     }
-    // },
-    // {
-    //     img: 'FAC',
-    //     name: "FontAwesome Clone",
-    //     demo: "https://dhawal-793.github.io/Font-Awesome-Clone/",
-    //     code: "https://github.com/dhawal-793/Font-Awesome-Clone",
-    //     description: "FontAwesome Clone is a Project based on Fontawesome.com, created using React Js and Tailwind CSS.",
-    //     style: {
-    //         shadow: "shadow-[#FFD43B]",
-    //         cover: "from-[#FFD43B]",
-    //         display: " hidden group-hover:flex"
-    //     }
-    // },
+    {
+        img: saccos,
+        name: "DIT SACCOS MANAGEMENT SYSTEM",
+        demo: "#",
+        code: "https://github.com/Arnoldmosha60/SACCOS-MS.git",
+        description: "DIT SACCOS Management System is built using react for frontend and django for backend",
+        style: {
+            shadow: "shadow-[#F8FAFC]",
+            cover: "from-[#F8FAFC]",
+            display: " hidden group-hover:flex"
+        }
+    },
     // {
     //     img: 'SIMON_GAME',
     //     name: "Simon Game",
@@ -97,36 +89,36 @@ const projects = [
             display: " hidden group-hover:flex"
         }
     },
-    // {
-    //     img: 'ECF',
-    //     name: "Ecommerce Frontend",
-    //     demo: "https://dhawal-793.github.io/E-Commerce-Website-Front-End-Design/",
-    //     code: "https://github.com/dhawal-793/E-Commerce-Website-Front-End-Design",
-    //     description: "Frontend Design of an Ecommerce Website created using HTML CSS JS and Bootstrap.",
-    //     style: {
-    //         shadow: "shadow-[#CEC3FB]",
-    //         cover: "from-[#CEC3FB]",
-    //         display: " hidden group-hover:flex"
-    //     }
-    // },
-    // {
-    //     img: 'CLI_TMA',
-    //     name: "Task Manager CLI",
-    //     demo: "https://github.com/dhawal-793/Command-line-application-for-Task-Management",
-    //     code: "https://github.com/dhawal-793/Command-line-application-for-Task-Management",
-    //     description: "This is a Task Management CLI App created using C++, here user can create, read, Update and delete tasks.",
-    //     style: {
-    //         shadow: "shadow-[#763145]",
-    //         cover: "from-[#763145]",
-    //         display: " hidden group-hover:flex"
-    //     }
-    // },
+    {
+        img: helpdesk,
+        name: "Online Helpdesk",
+        demo: "#",
+        code: "https://github.com/Arnoldmosha60/Online-Help-Desk.git",
+        description: "Online helpdesk is a mobile application built using Flutter and django that enables people to ask for help to a hospital",
+        style: {
+            shadow: "shadow-[#FFD43B]",
+            cover: "from-[#FFD43B]",
+            display: " hidden group-hover:flex"
+        }
+    },
+    {
+        img: ccm,
+        name: "CCM performance evaluation management system",
+        demo: "#",
+        code: "https://github.com/Arnoldmosha60/CCM-Performance-evaluation-management-system.git",
+        description: "Performance evaluation management system for CCM members created using HTML, CSS, Bootstrap and Django for backend",
+        style: {
+            shadow: "shadow-[#763145]",
+            cover: "from-[#763145]",
+            display: " hidden group-hover:flex"
+        }
+    },
     // {
     //     img: "",
-    //     name: "WordCloud Generator",
-    //     demo: "https://github.com/dhawal-793/Wordcloud-maker",
-    //     code: "https://github.com/dhawal-793/Wordcloud-maker",
-    //     description: "This is a WordCloud Maker, Created using Python. User can create WordCloud by giving paragraph of text as Input.   ",
+    //     name: "Contact App",
+    //     demo: "#",
+    //     code: "https://github.com/Arnoldmosha60/Contact-App.git",
+    //     description: "An app to display contacts list created using React and Java Springboot",
     //     style: {
     //         shadow: "shadow-emerald-500",
     //         cover: "from-emerald-500",
